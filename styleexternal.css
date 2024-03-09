@@ -1,0 +1,26 @@
+
+.thumbnail{
+  width: 250px;
+  margin-top: 50px;
+  border-radius: 5px;
+}
+.item-preview{
+  width:300px;
+  display: inline-block;
+}
+.add-button{
+  color: white;
+  background-color: red;
+  border-style: groove;
+  border: 1px;
+  border-color: #0C5273;
+  border-radius: 5px;
+  padding : 4px 16px;
+}
+.add-button : hover{
+  color: blue;
+  cursor: pointer;
+}
+a:link {
+  text-decoration:none
+}
