@@ -93,7 +93,7 @@
       var password = document.getElementById('password').value;
       var password2 = document.getElementById('password2').value;
       var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      var passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,12}$/
+      var passwordRegex =/^[a-zA-Z0-9!@#$%^&*]{8,12}$/;
       var usernameRegex = /^[a-zA-Z]+$/; 
       if(!usernameRegex.test(username)){
         alert("Please Enter a Valid Username");
