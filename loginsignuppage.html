@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login/Sign Up</title>
+    <style>
+      body {
+        background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+        font-family: 'poppins', sans-serif;
+      }
+      #form{
+        width: 300px;
+        margin: 20vh auto 0 auto;
+        padding: 20px;
+        background-color: whitesmoke;
+        border-radius: 4px;
+        font-size: 12px;
+      }
+      #form h1 {
+        color: #0f2027;
+        text-align: center;
+      }
+      .button1{
+        padding: 10px;
+        margin-top: 10px;
+        width: 100%;
+        color: white;
+        background-color: rgb(41,57,194);
+        border: none;
+        border-radius: 4px;
+      }
+      input{
+        height: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .input-control{
+        display: flex;
+        flex-direction: column;
+      }
+      .input-control input{
+        border: 2px solid #f0f0f0;
+        border-radius: 4px;
+      }
+      .input-control input:focus{
+        outline: 0;
+      }
+      .input-control.success input{
+        border-color: #093c372;
+      }
+      .input-control.error input{
+        border-color: #ff3860;
+      }
+      .input-control .error{
+        color: #ff3860;
+        font-size: 9px;
+        height: 13px;
+      }
+    </style>
+
+  </head>
+  <body>
+    <div class="container">
+      <form method="get" id="form" action="index.html">
+           <h1>Registration</h1>
+           <div class="input-control">
+              <label for="username">Username</label>
+              <input id="username" name="username" type="text" required>
+              <div class="error"></div>
+           </div>
+           <div class="input-control">
+             <label for="email">Email</label>
+             <input id="email" name="email" type="text">
+             <div class="error"></div>
+           </div>
+           <div class="input-control">
+             <label for="password">Password</label>
+             <input id="password" name="password" type="password">
+             <div class="error"></div>
+           </div>
+           <div class="input-control">
+             <label for="password2">Confirm Password</label>
+             <input id="password2" name="password2" type="password">
+             <div class="error"></div>
+           </div>
+           <input type="checkbox">Remember Password
+           <button type="submit" class="button1">Sign Up</button>
+           <br>
+           <button type="reset" class="button1">Reset</button>
+           <a href="index.html"><button class="button1">Return to home</button></a>
+      </form>
+    </div>
+    <script>
+
+      function validateForm(){
+
+      var username = document.getElementById('username').value;
+      var email = document.getElementById('email').value;
+      var password = document.getElementById('password').value;
+      var password2 = document.getElementById('password2').value;
+      var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      var passwordRegex =/^[a-zA-Z0-9!@#$%^&*]{8,12}$/;
+      var usernameRegex = /^[a-zA-Z ]+$/; 
+      if(!usernameRegex.test(username)){
+        alert("Please Enter a Valid Username");
+        document.getElementById("username").focus();
+        return false;
+      }
+      if(!emailRegex.test(email)){
+        alert("Please enter a valid Email address");
+        document.getElementById("email").focus();
+        return false;
+      }
+
+      if(!passwordRegex.test(password)){
+        alert("Please enter a valid password,Password length must be greater than 8 characters");
+        document.getElementById("password").focus();
+        return false;
+      }
+      if(password !== password2){
+        alert("password doesn't match");
+        document.getElementById("password2").focus();
+        return false;
+      }
+
+      return true;
+    }
+    document.getElementById("form").addEventListener("submit",function(event)
+    {
+      if(!validateForm()){
+        event.preventDefault();
+      }
+    });
+    </script>
+  </body>
+</html>
