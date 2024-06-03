@@ -1,0 +1,328 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styleexternal.css">
+    <title>
+      E-Groceries
+    </title>
+    <style> 
+        .menu{
+            border: 3px;
+            border-style: none;
+            border-color: grey;
+            margin-top: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 5px;
+            color: aliceblue;
+            background-color: grey;
+            font-weight: bold;
+            margin-right: 10px;
+          } 
+        .howtoshop{
+          color: rgb(109, 110, 113);
+        }    
+        .help{
+          width: 100px;
+          height: 100px;
+        } 
+    </style>
+  </head>
+  <body>
+    <center>
+      <img src="https://static.vecteezy.com/system/resources/previews/010/871/220/non_2x/letter-e-logo-designs-free-vector.jpg" alt=" RO Grocery" width="60px" height="40px"  style="margin: 10px; height: 100px; border-radius: 50%;"><br>
+      <p style="
+        margin-top: 0px;
+        color: rgb(6, 6, 21);
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;">Groceries</p>
+      <input type="text" placeholder="Search for Products..." style="
+        width: 400px;
+        height: 30px;
+        margin-top: 0px;">
+      <br>
+      <h2 >On Sale</h2>
+      
+      <a href="#poffruits">
+      <button class="menu">Fruits</button>
+      </a>
+      <a href="#pofveg">
+      <button class="menu">Vegetables</button>
+      </a>
+      <a href="#poftea">
+      <button class="menu">Tea</button>
+      </a>
+      <a href="#pofghee">
+      <button class="menu">Ghee</button>
+      </a>
+      <a href="#pofmeat">
+      <button class="menu">Meat</button>
+      </a>
+      
+        <button class="menu"> 
+          <select class="menu" style="padding: 0px; padding-top: 0px;">
+            <option>Shop by category</option>
+            <option class="op">Fruits</option>
+            <option class="op">Vegetables</option>
+            <option class="op">Tea</option>
+            <option class="op">Ghee</option>
+            <option class="op">meat</option>
+          </select>
+        </button>
+        <a href="#pofabout">
+          <button class="menu">About</button>
+        </a>
+      <a href="#pofhelp"><button  class="menu">Help</button></a>
+      <a href="loginsignuppage.html" target="_blank"><button  class="menu">Login/Sign Up</button></a>
+      <br>
+      <div class="container">
+
+        <div class="item-preview">
+          <a href="#" target="_blank">
+            <img src="https://www.pngmart.com/files/1/Banana-Fruit-PNG.png" alt="banana" class="thumbnail"><br><br>
+            <button class="add-button">Add</button>
+          </a>
+          <p class="proname">Banana - Robusta <br> 1kg</p>
+          <p>&#8377;35.04 <sup><del>&#8377;40.51</del><br><br></sup>Get it in 2 hrs</p>
+        </div>
+
+        <div class="item-preview">  
+          <a href="#" target="_blank">
+            <img src="https://cdn.shopify.com/s/files/1/0286/8586/0898/products/Capsicum_Green_1024x1024.jpg" alt="capsicum" class="thumbnail"><br><br>
+            <button class="add-button">Add</button> 
+          </a>
+          <p class="proname">Capsicum-Green <br> 1kg </p>
+          <p>&#8377;50 <sup> <del>&#8377;79</del></sup><br><br>Get in 2 hrs</p>
+        </div>
+
+        <div class="item-preview">
+          <a href="#" target="_blank">
+            <img src="https://htv.com.pk/wp-content/uploads/Top-10-Benefits-Of-Green-Chili.jpg" alt="Green Chilli" class="thumbnail"><br><br>
+            <button class="add-button">Add</button>
+          </a>
+          <p class="proname">Chilli - Green Long, Medium (Loose)<br> 500g </p>
+          <p>&#8377;50 <sup><del>&#8377;70</del><br><br></sup>Get it in 2 hrs</p>
+        </div>
+
+      </div>
+      <br>
+      <div class="container">
+
+        <div class="item-preview">
+          <a href="#" target="_blank">
+            <img src="https://www.lovethegarden.com/sites/default/files/content/articles/UK_coriander-growing.jpg" alt="Coriander" class="thumbnail"><br><br>
+            <button class="add-button">Add</button>
+          </a>
+          <p class="proname">Coriander Leaves<br> 250g </p>
+          </a>
+          <p>&#8377;21.17 <sup><del>&#8377;29</del><br><br></sup>Get it in 2 hrs</p>
+        </div>
+
+        <div class="item-preview">
+          <a href="#" target="_blank"></a>
+            <img src="https://www.lovethegarden.com/sites/default/files/content/articles/UK_fresh-ginger-harvested.jpg" alt="Ginger" class="thumbnail"><br><br>
+            <button class="add-button">Add</button>
+          </a>
+          <p class="proname">Ginger<br> 500g </p>
+          <p>&#8377;75 <sup><del>&#8377;111</del><br><br></sup>Get it in 2 hrs</p>
+        </div>
+
+        <div class="item-preview">
+          <a href="#" target="_blank">
+            <img src="https://4.bp.blogspot.com/-gNyZVbXgvQA/VAsZHtKBnhI/AAAAAAAANLY/kzm2XQGtZj4/s1600/onion.jpg" alt="Onion" class="thumbnail"><br><br>
+            <button class="add-button">Add</button>
+          </a>
+          <p class="proname">Onion(loose)<br> 5kg </p>
+          <p>&#8377;161 <sup><del>&#8377;269</del><br><br></sup>Get it in 2 hrs</p>
+        </div>
+
+      </div>
+      <hr>
+      <h2 id="poftea">Tea</h2>
+
+      <div class="container">
+
+        <div class="item-preview">
+          <a href="#" target="_blank">
+            <img src="https://www.quicklly.com/upload_images/product/1624502532-tea-taj-mahal-loose-black-tea.jpg" alt="Taj Mahal Tea" class="thumbnail"><br><br>
+            <button class="add-button">Add</button>
+          </a>
+          <p class="proname">Tea<br> 1kg </p>
+          <p>&#8377;161 <sup><del>&#8377;269</del><br><br></sup>Get it in 2 hrs</p>
+        </div>
+
+        <div class="item-preview">
+          <a href="#" target="_blank">
+            <img src="https://www.komalasvegemart.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/8/9/8901030409578_3084_1440746861917.jpg" alt="3 Roses Tea" class="thumbnail"><br><br>
+            <button class="add-button">Add</button>
+          </a>
+          <p class="proname">Tea<br> 1kg </p>   
+          <p>&#8377;410 <sup><del>&#8377;420</del><br><br></sup>Get it in 2 hrs</p>
+        </div>
+      
+       </div>
+      <hr>
+      <h2 id="poffruits">Fruits</h2>
+      <div class="container">
+        <div class="item-preview" >
+          <a href="#">
+            <img src="https://i.pinimg.com/736x/eb/3f/5e/eb3f5e3fe87845b0582414259b9d128d.jpg" alt="Apples" class="thumbnail"><br>
+            <button class="add-button">Add</button>
+          </a>
+          <p class="proname">Apple<br>4 pcs Approx(450-500g) </p>
+          <p>&#8377;143.8 <sup><del>&#8377;196</del><br><br></sup>Get it in 2 hrs</p>
+        </div>
+
+        <div class="item-preview">
+          <a href="#">
+          <img src="https://onespiritblog.com/wp-content/uploads/2020/11/Oranges-scaled.jpg" alt="Oranges" class="thumbnail"><br>
+          <button class="add-button">Add</button>
+          </a>
+          <p class="proname">Orange<br>500g</p> 
+          <p>&#8377;30<sup><del>&#8377;42</del><br><br></sup>Get it in 2 hrs</p>
+        </div>
+      </div>
+      <hr>
+
+      <h2 id="pofveg">Vegetables</h2>
+
+      <div class="container">
+
+        <div class="item-preview" >
+          <a href="#"></a>
+            <img src="https://www.feedipedia.org/sites/default/files/images/tomato_fruits.jpg" alt="Tomatoes" target="_blank" class="thumbnail"><br><br>
+            <button class="add-button">Add</button>
+          </a>
+          <p class="proname">Tomato<br> 500g </p>   
+          <p>&#8377;12 <sup><del>&#8377;18</del><br><br></sup>Get it in 2 hrs</p>  
+        </div>
+
+        <div class="item-preview">
+          <a href="#"></a>
+            <img src="https://image.ec21.com/image/bratradingptyltd5/oimg_GC11469954_CA11470308/Fresh-Potatoes--Irish-Potatoes-%252F-Bulk-Wholesale-Factory-Organic-Fresh-Potato-Diamond-with-High-Quali.jpg" alt="Potatoes" class="thumbnail"><br><br>
+            <button class="add-button">Add</button>
+          </a>
+          <p class="proname">Potato<br>1kg </p>    
+          <p>&#8377;12 <sup><del>&#8377;18</del><br><br></sup>Get it in 2 hrs</p>  
+        </div>
+
+      </div>
+      <hr>
+      <h2  id="pofghee">Ghee</h2>
+      <div class="container">
+
+        <div class="item-preview">
+          <a href="#"></a>
+          <img src="https://www.komalasvegemart.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/g/r/grb_ghee.jpg" alt="GRB Ghee" class="thumbnail"><br><br>
+          <button class="add-button">Add</button>
+          </a>
+          <p class="proname">GRB Ghee/Tuppa<br> 500ml</p>  
+          <p>&#8377;372<sup><del>&#8377;419</del><br><br></sup>Get it in 2 hrs</p>  
+        </div>
+
+        <div class="item-preview">
+          <a href="#">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=480,h=480/app/images/products/sliding_image/206767a.jpg?ts=1652430577" alt="Aashirvaad Ghee" class="thumbnail"><br><br>
+            <button class="add-button">Add</button>
+          </a>
+          <p class="proname">Aashirvaad Ghee/Tuppa<br> 500ml</p>    
+          <p>&#8377;420 <sup><del>&#8377;445</del><br><br></sup>Get it in 2 hrs</p>  
+        </div>  
+
+      </div>
+      <hr>
+
+      <h2 id="pofmeat">Fresh Meat</h2>
+      <div class="container">
+
+        <div class="item-preview" > 
+          <a href="#"> 
+            <img src="https://www.bigbasket.com/media/uploads/p/l/10000909_8-fresho-chicken-curry-cut-without-skin-antibiotic-residue-free.jpg" alt="Fresh chicken without skin" class="thumbnail"><br><br>
+            <button class="add-button">Add</button> 
+          </a>
+          <p class="proname">Fresh Chicken without skin<br> 500g</p>  
+          <p>&#8377;149 <sup><del>&#8377;207</del><br><br></sup>Get it in 2 hrs</p> 
+        </div>
+
+        <div class="item-preview">
+          <a href="#">
+            <img src="https://evegro.com/wp-content/uploads/2020/11/rohu-curry-cut-with-head1.jpeg" alt="Rohu fish" class="thumbnail"><br><br>
+            <button class="add-button">Add</button> 
+          </a>
+          <p class="proname">Fresh Rohu Fish <br> 500g</p>
+          <p>&#8377;229 <sup><del>&#8377;324</del><br><br></sup>Get it in 2 hrs</p> 
+        </div>
+
+      </div>
+    </center>
+    <hr>
+    <hr>
+      <div id="pofabout">
+        <p style="color: rgb(88, 89, 91); font-weight: bold;">
+          What is e-groceries.com
+        </p>  
+        <span class="howtoshop""><ins>e-groceries.com</ins>(Innovative Retail Concepts Private Limited) is India’s largest online food and grocery store.
+        With over <span style="color: blueviolet;">18,000 </span>products and over a <span style="color:  blueviolet;;">1000 </span>brands 
+        in our catalogue you will find everything you are looking for. Right from fresh <span style="color: blueviolet;">
+        Fruits and Vegetables, Rice and Dals, Spices and Seasonings to Packaged products, Beverages, Personal care products, Meats</span> – we have it all.
+        Choose from a wide range of options in every category, exclusively handpicked to help you find the best quality available at the lowest prices.
+        Select a time slot for delivery and your order will be delivered right to your doorstep, anywhere in Bangalore, Hyderabad, Mumbai, Pune, Chennai, Delhi,
+        Noida, Mysore, Coimbatore, Vijayawada-Guntur, Kolkata, Ahmedabad-Gandhinagar, Lucknow-Kanpur, Gurgaon, Vadodara, Visakhapatnam, Surat, Nagpur, Patna,
+        Indore and Chandigarh Tricity <span style="color: blueviolet;">You can pay online using your debit / credit card or by cash / sodexo on delivery.
+        </span>
+        We guarantee on time delivery, and the best quality!
+        </span> <br>
+        <p class="howtoshop" font-weight: bold;">Happy Shopping</p> 
+        <br>
+        <audio src="luke.mp3" controls></audio>
+        <br> 
+        <p style="color: rgb(88, 89, 91); font-weight: bold;">About E Groceries</p>
+        <p style="color: rgb(88, 89, 91); font-weight: bold;">Why should I use e-groceries.com?</p>
+        <div class="textcontent">
+        e-groceries.com allows you to walk away from the drudgery of grocery shopping and welcome an easy relaxed way of browsing and 
+        shopping for groceries. Discover new products and shop for all your food and grocery needs from the comfort of your home or office.
+        No more getting stuck in traffic jams, paying for parking, standing in long queues and carrying heavy bags
+        get everything you need, when you need, right at your doorstep. 
+        Food shopping online is now easy as every product on your monthly shopping list, is now available online at rogroceries.com,
+        India’s best online grocery store.
+        </div><br>
+        <hr>
+        <div id="pofhelp" class="howtoshop">
+        <p style="color: rgb(88, 89, 91); font-weight: bold;">How do I order?</p>
+        <ol>
+          <li>Browse e-groceries.com for products
+          or use the search feature</li>
+          <img src="https://www.bigbasket.com/media/uploads/flatpages/about-us/about_shopbag.jpg" alt="basket" class="help">
+          <li>Add items to your Shopping Basket</li>
+          <img src="https://www.bigbasket.com/media/uploads/flatpages/about-us/whybb.jpg" alt="trolley" class="help">
+          <li>Choose a convenient delivery
+          time from our 4 Slots* a day</li>
+          <table border="1">
+            <tr >
+              <th>Time slots</th>
+            </tr>
+            <tr class ="howtoshop"><td>7.00 AM - 9.30 AM</td></tr>
+            <tr class="howtoshop"><td>9.30 AM - 12.00 PM</td></tr>
+            <tr class="howtoshop"><td>5.00 PM - 7.30 PM</td></tr>
+            <tr class="howtoshop"><td>7.30 PM - 10.00 PM</td></tr>
+            </tr>
+          </table>
+          <li>Select suitable payment
+            option(Cash, Sodexo, Credit Card)</li>
+          <li>Your products will be home-delivered
+            as per your order.</li>
+        </ol>
+      </div>
+      <h3>Tutorial</h3>
+      <video src="2016731-hd_1920_1080_30fps.mp4" controls width="400px" ></video>
+      <span class="howtoshop" style="color: blue;">
+      <br>
+      Where do we operate
+      <br>
+      We currently offer our services in Bangalore, Hyderabad, Mumbai, Pune, Chennai, Delhi, Noida, Mysore, Coimbatore, Vijayawada-Guntur,
+      Kolkata, Ahmedabad-Gandhinagar, Lucknow-Kanpur, Gurgaon, Vadodara, Visakhapatnam, Surat, Nagpur, Patna, Indore and Chandigarh Tricity city limits.</span>
+    </div>
+        
+  <body>
+</html>
